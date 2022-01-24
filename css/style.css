@@ -1,5 +1,8 @@
 * {
   font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -40,19 +43,8 @@
     font-family: "Avenir-Normal";
 }
 
-.title-inicio {
-    font-size: 40px;
-    color: white;
-}
-
 .color-amarillo {
     color: #fecb37
-}
-
-.section-black {
-    background-image: url(../img/fondo-black.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .section-light {
@@ -362,70 +354,6 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
 }
-
-
-/* CSS PAGINA MENU */
-
-.container-cards-menus {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 30px;
-    column-gap: 30px;
-    width: 100%;
-}
-
-.card-menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.card-menu-imagen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 40px;
-}
-
-.card-menu-body {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 30px 30px;
-    grid-template-areas: 
-    "titulo separador precio"
-    "texto texto texto";
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.separador-precio {
-    width: 100%;
-    border-bottom: solid 1px #cecece;;
-}
-
-.item-a {
-    grid-area: titulo;
-    justify-self: start;
-}
-.item-b {
-    padding-bottom: 5px;
-    width: 90%;
-    grid-area: separador;
-    align-self: center;
-    justify-self: center;
-}
-.item-c {
-    grid-area: precio;
-}
-.item-d {
-    grid-area: texto;
-    justify-self: start;
-}
-
-
-
-/* END CSS PAGINA MENU */
 
 
 /* CSS BOOTH */

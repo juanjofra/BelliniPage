@@ -1,0 +1,168 @@
+@import url('http://fonts.cdnfonts.com/css/hey-october');
+@import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
+
+.section-black {
+    background-image: url(../img/fondo-black.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 700px;
+}
+
+.col-left{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: flex-end;
+ width: 55%;
+}
+
+.box-texts{
+    max-width: 33.188rem;
+}
+
+.title-inicio {
+    font-family: 'Avenir LT Std', sans-serif;
+    font-style: normal;
+    font-weight: 750;
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+    color: white;
+}
+
+.title-inicio-amarillo {
+    font-family: 'Avenir LT Std', sans-serif;
+    font-style: normal;
+    font-weight: 750;
+    font-size: 2.25rem;
+    line-height: 2.688rem;
+    color: #fecb37;
+}
+
+.col-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/hover-inicio.png) right no-repeat;
+    background-size: 70%;
+    width: 45%;
+}
+
+.img-plato-inicio{
+    width: 50%;
+    height: 50%;
+}
+
+
+.text-arma-tu-plato{
+    font-family: 'Hey October', sans-serif;
+    size: 3rem;
+}
+
+.text-carta{
+    font-family: 'Hey October', sans-serif;
+    size: 3rem;
+}
+
+.container-cards-menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0;
+    row-gap: 1.875rem;
+    column-gap: 1.875rem;
+    width: 100%;
+}
+
+.card-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-menu-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right:2.5rem;
+}
+
+.card-menu-body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 1.875rem 1.875rem;
+    grid-template-areas: 
+    "titulo separador precio"
+    "texto texto texto";
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.separador-precio {
+    width: 100%;
+    border-bottom: solid 1px #cecece;
+}
+
+.item-a {
+    grid-area: titulo;
+    justify-self: start;
+}
+.item-b {
+    padding-bottom: 0.313rem;
+    width: 90%;
+    grid-area: separador;
+    align-self: center;
+    justify-self: center;
+}
+.item-c {
+    grid-area: precio;
+}
+.item-d {
+    grid-area: texto;
+    justify-self: start;
+}
+
+
+  @media only screen and (min-width: 320px) and (max-width: 576px) {
+    *{
+        font-size: 12px;
+    }
+
+    .section-black {
+        flex-direction: column;
+    }
+
+    .col-left{
+     width: 100%;
+    }
+
+    .box-texts{
+      max-width: 90%;
+      padding: 1.5rem 0;
+    }
+
+    .title-inicio {
+      font-size: 1.5rem;
+  }
+  
+  .title-inicio-amarillo {
+      font-size: 1.5rem;
+      line-height: 1rem;
+  }
+
+  .col-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/hover-inicio.png) right no-repeat;
+    background-size: 60%;
+    width: 100%;
+}
+
+.img-plato-inicio{
+    width: 40%;
+    height: 60%;
+}
+    
+    
+  }
