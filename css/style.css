@@ -1,0 +1,483 @@
+* {
+  font-size: 16px;
+}
+
+@font-face {
+  /* NEGRITA */
+  font-family: "Avenir-Bold";
+  src: local("Avenir-Bold"),
+    url(../font/AvenirLTStd-Black.ttf) format("truetype");
+}
+
+@font-face {
+    /* Normal */
+    font-family: "Avenir-Intermedio";
+    src: local("Avenir-Intermedio"),
+        url(../font/AvenirLTStd-Roman.ttf) format("truetype");
+}
+
+@font-face {
+    /* NADA */
+    font-family: "Avenir-Normal";
+    src: local("Avenir-Normal"),
+        url(../font/AvenirLTStd-Book.ttf) format("truetype");
+}
+
+.content-every {
+    height: 100vh;
+}
+
+.div-flex {
+    display: flex;
+    align-items: center;
+}
+
+.bold {
+    font-family: "Avenir-Bold";
+}
+
+.normal {
+    font-family: "Avenir-Normal";
+}
+
+.title-inicio {
+    font-size: 40px;
+    color: white;
+}
+
+.color-amarillo {
+    color: #fecb37
+}
+
+.section-black {
+    background-image: url(../img/fondo-black.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-light {
+    background-image: url(../img/fondo-light.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 100px 200px;
+}
+
+.section-amarillo {
+    background-image: url(../img/fondo-amarillo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 200px;
+}
+
+.section {
+    padding: 100px;
+}
+
+.img-hover-inicio {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    justify-content: end;
+}
+
+.text-center {
+    text-align: center;
+    z-index: 100;
+}
+
+.div-icon {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+
+.list-ingre {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.pf-list {
+    font-size: 17px;
+    font-family: "Avenir-Normal";
+}
+
+.img-nro {
+    position: absolute;
+    z-index: -1;
+    margin-top: -35px;
+    margin-left: -10px;
+}
+
+.img-hover-1 {
+    position: absolute;
+    left: 0;
+    margin-top: -360px;
+}
+
+.img-hover-2 {
+    position: absolute;
+    right: 0;
+    margin-top: -150px;
+}
+
+.img-hover-3 {
+    position: absolute;
+    left: 0;
+    margin-top: -90px;
+}
+
+.img-hover-4 {
+    position: absolute;
+    right: 0;
+    margin-top: 0px;
+}
+
+.img-hover-5 {
+    position: absolute;
+    left: 0;
+    margin-top: 270px;
+}
+
+.img-hover-6 {
+    position: absolute;
+    right: 0;
+    margin-top: 130px;
+}
+
+.img-hover-7 {
+    position: absolute;
+    right: 0;
+    margin-top: -60px;
+    z-index: -1;
+    margin-right: 70px;
+}
+
+.img-arrow-1 {
+    position: absolute;
+    width: 80px;
+    margin-top: 40px;
+    margin-left: 110px;
+}
+
+.img-arrow-2 {
+    position: absolute;
+    width: 80px;
+    margin-top: -40px;
+    margin-left: 130px;
+}
+
+.linea-amarilla {
+    background: #fecb37;
+    width: 10%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.img-radius {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.color-gris {
+    color: #a0a0a0;
+}
+
+.margin-cero {
+    margin: 0;
+}
+
+.btn-rojo {
+    width: 160px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-family: "Avenir-Bold";
+    font-size: 20px;
+    background: #AD1512;
+}
+
+.title-pizza {
+    font-family: "Avenir-Bold";
+    font-size: 70px;
+    color: white;
+    line-height: 60px; 
+    /* si agregan otra letra quitenle el line height asi queda mejor creo */
+}
+
+.footer {
+    background-image: url(../img/fondo-black.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 100px;
+    padding-bottom: 0;
+}
+
+.sub-footer {
+    color: white;
+    font-family: "Avenir-Bold";
+    font-size: 17px;
+}
+
+.list-footer {
+    color: #c3c3c3;
+    font-family: "Avenir-Normal";
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.list-footer-gps {
+    color: #fff;
+    font-family: "Avenir-Bold";
+    padding: 0;
+    font-size: 15px;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.list-redes {
+    color: #fff;
+    font-family: "Avenir-Normal";
+    padding: 0;
+    font-size: 25px;
+    list-style: none;
+    padding-bottom: 5px;
+    display: inline;
+    margin-left: 40px;
+}
+
+.img-header {
+    position: absolute;
+    width: 110px;
+    top: 0;
+    left: 50%;
+    margin-left: -55px;
+}
+
+.pf-header {
+    font-family: "Avenir-Bold";
+    color: #fff;
+    margin: 0;
+}
+
+.link-css {
+    color: white;
+    text-decoration: none;
+}
+
+.img-locales {
+    width: 40%;
+    border-radius: 10px;
+    position: absolute;
+    left: -75px;
+}
+
+.color-rojo {
+    color: #AD1512;
+}
+
+.pf-locales {
+    font-size: 0.875rem;
+}
+
+
+/* Cordigo Juanjo */
+.header-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #5A8F4D;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.menus{
+    justify-self: center;
+}
+
+.logos-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.svg-logo-redes-header {
+    margin-left: 20%;
+}
+
+
+.espacio-logo-bellini{
+    width: 100%;
+}
+
+.container-locales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-locales-title {
+    width: 100%;
+}
+
+.cuadro-local {
+    border-radius: 10px;
+    background: #fefefe;
+    box-shadow: 0px 0px 10px rgba(132, 132, 132, 0.25);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 132px;
+    margin-left: 130px;
+    position: relative;
+    padding: 18px;
+    padding-left: 70px;
+    width: 308px;
+}
+
+.cuadro-locale-imagen{
+    background-color: rgba(132, 132, 132, 0.25);
+    width: 20%;
+    margin-left: -50px;
+}
+
+.container-locales-body {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+
+
+/* CSS PAGINA MENU */
+
+.container-cards-menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 100%;
+}
+
+.card-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.card-menu-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.card-menu-body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 30px 30px;
+    grid-template-areas: 
+    "titulo separador precio"
+    "texto texto texto";
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.separador-precio {
+    width: 100%;
+    border-bottom: solid 1px #cecece;;
+}
+
+.item-a {
+    grid-area: titulo;
+    justify-self: start;
+}
+.item-b {
+    padding-bottom: 5px;
+    width: 90%;
+    grid-area: separador;
+    align-self: center;
+    justify-self: center;
+}
+.item-c {
+    grid-area: precio;
+}
+.item-d {
+    grid-area: texto;
+    justify-self: start;
+}
+
+
+
+/* END CSS PAGINA MENU */
+
+
+/* CSS BOOTH */
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-bottom: 7% !important;
+    list-style: none;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 175px;
+    height: 51px;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.nav-pills .nav-link {
+    background: rgba(132, 132, 132, 0.25);
+    border-radius: 10px;
+    border: 0;
+    color: #2E2D2B9C;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: #AD1512 !important;
+}
+
+
+
+/* Screen larger than 1279px? 1 column */
+@media (max-width: 1279px) {
+    .container-locales-body { grid-template-columns: repeat(1, 1fr); }
+
+    .cuadro-local { width: 408px;}
+
+    .img-locales {width: 30%;}
+  }
+
+  /* Screen larger than 940px? 1 column */
+@media (max-width: 940px) {
+    .container-locales-body { grid-template-columns: repeat(1, 1fr); }
+
+    .cuadro-local { width: 308px;}
+
+    .img-locales {width: 40%;}
+  }
