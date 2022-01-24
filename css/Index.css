@@ -124,45 +124,4 @@
 
 
  
-  @media (max-width: 576px) {
-    *{
-        font-size: 12px;
-    }
-
-    .section-black {
-        flex-direction: column;
-    }
-
-    .col-left{
-     width: 100%;
-    }
-
-    .box-texts{
-      max-width: 90%;
-      padding: 1.5rem 0;
-    }
-
-    .title-inicio {
-      font-size: 1.5rem;
-    }
-  
-    .title-inicio-amarillo {
-        font-size: 1.5rem;
-        line-height: 1rem;
-    }
-
-    .col-right{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url(../img/hover-inicio.png) right no-repeat;
-      background-size: 60%;
-      width: 100%;
-    }
-
-    .img-plato-inicio{
-        width: 40%;
-        height: 60%;
-    }
-    
-}
+ 
