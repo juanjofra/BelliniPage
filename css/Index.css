@@ -123,10 +123,16 @@
 }
 
 
- 
-  @media (max-width: 576px) {
+
+    @media (max-width: 576px) {
     *{
         font-size: 12px;
+        background-color: rosybrown;
+    }
+
+    .container {
+      width: 100% !important;
+      background-color: red;
     }
 
     .section-black {

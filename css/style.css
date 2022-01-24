@@ -394,7 +394,7 @@
 
 /* Screen larger than 1279px? 1 column */
 @media (max-width: 1279px) {
-    .container-locales-body { grid-template-columns: repeat(1, 1fr); }
+    .container-locales-body { grid-template-columns: 1fr; }
 
     .cuadro-local { width: 408px;}
 
@@ -403,9 +403,32 @@
 
   /* Screen larger than 940px? 1 column */
 @media (max-width: 940px) {
-    .container-locales-body { grid-template-columns: repeat(1, 1fr); }
+    /* .container-locales-body { grid-template-columns: repeat(1, 1fr); } */
 
     .cuadro-local { width: 308px;}
 
     .img-locales {width: 40%;}
+  }
+
+  @media (max-width: 850px) {
+    .section-light {
+        padding: 0;
+    }
+    .container-locales{
+        margin: 3rem 0;
+    }
+   
+}
+
+  @media (max-width: 576px) {
+    *{
+          font-size: 12px;
+      }
+
+    .container-locales{
+        margin: 3rem 0;
+    }
+    .cuadro-local { width: 208px;}
+
+    .img-locales {width: 60%;}
   }
