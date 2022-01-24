@@ -123,7 +123,8 @@
 }
 
 
-  @media only screen and (min-width: 320px) and (max-width: 576px) {
+ 
+  @media (max-width: 576px) {
     *{
         font-size: 12px;
     }
@@ -143,26 +144,25 @@
 
     .title-inicio {
       font-size: 1.5rem;
-  }
+    }
   
-  .title-inicio-amarillo {
-      font-size: 1.5rem;
-      line-height: 1rem;
-  }
+    .title-inicio-amarillo {
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
 
-  .col-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url(../img/hover-inicio.png) right no-repeat;
-    background-size: 60%;
-    width: 100%;
-}
+    .col-right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url(../img/hover-inicio.png) right no-repeat;
+      background-size: 60%;
+      width: 100%;
+    }
 
-.img-plato-inicio{
-    width: 40%;
-    height: 60%;
+    .img-plato-inicio{
+        width: 40%;
+        height: 60%;
+    }
+    
 }
-    
-    
-  }
