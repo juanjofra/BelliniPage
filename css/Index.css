@@ -1,21 +1,24 @@
 .section-black {
-    /* background-image: url(../img/fondo-black.svg); */
-    /* background-size: cover; */
-    /* background-repeat: no-repeat; */
-    /* display: flex; */
-    /* height: 700px; */
+    background-image: url(../img/fondo-black.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 55% 1fr;
+    height: calc(100vh - 66px);
+    margin-bottom: 4rem;
 }
 
 .col-left{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: flex-end;
- width: 55%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .box-texts{
-    max-width: 33.188rem;
+    width: 32rem;
 }
 
 .title-inicio {
@@ -37,12 +40,17 @@
 }
 
 .col-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: url(../img/hover-inicio.png) right no-repeat;
-    background-size: 70%;
-    width: 45%;
+    background-size: 41.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-plato-inicio{
+  width: 29rem;
+  height: 29rem;
+  margin: 0 auto;
 }
 
 .plato-inicio{
@@ -125,7 +133,7 @@
 
 }
 
-
+/******************* MEDIA QUERY PARA DISPOSITIVOS MOVIL*******************/
 
     @media (max-width: 576px) {
     *{
@@ -133,11 +141,12 @@
     }
 
     .section-black {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .col-left{
-     width: 100%;
+     align-items: center;
     }
 
     .box-texts{
@@ -155,12 +164,13 @@
     }
 
     .col-right{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url(../img/hover-inicio.svg) right no-repeat;
-      background-size: 60%;
-      width: 100%;
+      background-size: 27.5rem;
+      background-position-y: bottom;
+    }
+
+    .img-plato-inicio{
+      width: 25rem;
+      height: 25rem;
     }
 
     .plato-inicio{

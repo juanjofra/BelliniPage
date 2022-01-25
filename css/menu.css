@@ -26,7 +26,7 @@
 .card-menu-body {
     display: grid;
     grid-template-columns: auto 1fr auto;
-    grid-template-rows: 30px 30px;
+    grid-template-rows: 1.875rem 1.875rem;;
     grid-template-areas: 
     "titulo separador precio"
     "texto texto texto";
@@ -57,4 +57,26 @@
 .item-d {
     grid-area: texto;
     justify-self: start;
+}
+
+
+/******************* MEDIA QUERY PARA DISPOSITIVOS MOVIL*******************/
+
+@media (max-width: 576px) {
+    *{
+        font-size: 10px;
+    }
+
+    .container-cards-menus {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+    .card-menu {
+        display: flex;
+        justify-self: center;
+        width: 90%;
+    }
+
 }
