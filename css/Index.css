@@ -133,7 +133,25 @@
 
 }
 
+.title-pizza {
+  font-family: "Avenir-Bold";
+  font-size: 4.375rem;
+  color: white;
+  line-height: 60px; 
+  /* si agregan otra letra quitenle el line height asi queda mejor creo */
+}
+
+.content-text-section-amarillo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 29.313rem;
+  align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 /******************* MEDIA QUERY PARA DISPOSITIVOS MOVIL*******************/
+
 
     @media (max-width: 576px) {
     *{
@@ -203,6 +221,13 @@
 .text-body-carta{
   padding: 0 2rem;
   text-align: center;
+}
+
+.content-text-section-amarillo{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
 }
     
 }

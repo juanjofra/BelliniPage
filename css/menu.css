@@ -1,7 +1,3 @@
-.section-light{
-    margin: 4rem 0;
-}
-
 .container-cards-menus {
     display: grid;
     grid-template-columns: 1fr 1fr;

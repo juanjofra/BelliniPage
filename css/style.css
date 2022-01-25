@@ -51,19 +51,21 @@ ol, ul {
     color: #fecb37
 }
 
-/* .section-light {
+.section-light{
+    margin: 4rem;
+}
+
+.section-light {
     background-image: url(../img/fondo-light.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 100px 200px;
 }
 
 .section-amarillo {
     background-image: url(../img/fondo-amarillo.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 200px;
-} */
+}
 
 .section {
     padding: 100px;
@@ -194,9 +196,6 @@ ol, ul {
 .btn-rojo {
     width: 160px;
     height: 45px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     border: 0;
     color: white;
@@ -205,13 +204,7 @@ ol, ul {
     background: #AD1512;
 }
 
-.title-pizza {
-    font-family: "Avenir-Bold";
-    font-size: 70px;
-    color: white;
-    line-height: 60px; 
-    /* si agregan otra letra quitenle el line height asi queda mejor creo */
-}
+
 
 .footer {
     background-image: url(../img/fondo-black.svg);
@@ -461,40 +454,48 @@ ol, ul {
 
 
 
-/* Screen larger than 1279px? 1 column */
-@media (max-width: 1279px) {
-    .container-locales-body { grid-template-columns: 1fr; }
 
-    .cuadro-local { width: 408px;}
-
-    .img-locales {width: 30%;}
-  }
-
-  /* Screen larger than 940px? 1 column */
-@media (max-width: 940px) {
-    /* .container-locales-body { grid-template-columns: repeat(1, 1fr); } */
-
-    .cuadro-local { width: 308px;}
-
-    .img-locales {width: 40%;}
-  }
-
-  @media (max-width: 850px) {
-    .section-light {
-        padding: 0;
-    }
-    .container-locales{
-        margin: 3rem 0;
-    }
-   
-}
 
 
 /******************* MEDIA QUERY PARA DISPOSITIVOS MOVIL*******************/
 
+/* Screen larger than 1279px? 1 column */
+@media (max-width: 1279px) {
+    .container-locales-body { 
+        grid-template-columns: 1fr; 
+    }
+
+    .cuadro-local { 
+        width: 408px;
+    }
+
+    .img-locales {
+        width: 30%;
+    }
+  }
+
+  /* Screen larger than 940px? 1 column */
+@media (max-width: 940px) {
+    *{
+        font-size: 14px;
+    }
+    .container-locales-body { 
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .cuadro-local { 
+        width: 308px;
+    }
+
+    .img-locales {
+        width: 40%;
+    }
+  }
+
+
   @media (max-width: 576px) {
     *{
-          font-size: 14px;
+          font-size: 12px;
     }
 
     .header-content{
@@ -543,8 +544,6 @@ ol, ul {
         width: 45px;
         fill: rgb(223, 222, 222);
     }
-
-
 
     .container-locales{
         margin: 3rem 0;
@@ -629,5 +628,36 @@ ol, ul {
 
     .img-logo-bellini{
         width: 7rem;
+    }
+
+    .section-amarillo {
+        background-image: url(../img/fondo-amarillo.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .btn-rojo {
+        width: 125px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .nav {
+        margin-bottom: 20% !important;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .nav-pills .nav-link {
+        width: 8rem;
+        font-size: 1.4rem;
+        height: 4rem;
+    }
+    
+
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        width: 8rem;
+        font-size: 1.4rem;
+        height: 4rem;
     }
   }
