@@ -352,6 +352,11 @@ ol, ul {
 
 
 /* Cordigo Juanjo */
+
+.navbar {
+    display: none;
+}
+
 .header-content {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -484,10 +489,62 @@ ol, ul {
    
 }
 
+
+/******************* MEDIA QUERY PARA DISPOSITIVOS MOVIL*******************/
+
   @media (max-width: 576px) {
     *{
           font-size: 14px;
-      }
+    }
+
+    .header-content{
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        padding: 0px;
+        background: #5A8F4D !important;
+    }
+
+    .navbar-nav {
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-light .navbar-brand {
+        color: rgba(255, 255, 255, 0.9);
+    }    
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 14px;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: #fecb37;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(255, 255, 255, 0.9);
+        border-color: rgba(255, 255, 255, 0.144);
+    }
+
+    .img-header{
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+        width: 60px;
+        border-radius: 0.3rem;
+    }
+
+    .navbar-toggler{
+        width: 45px;
+        fill: rgb(223, 222, 222);
+    }
+
+
 
     .container-locales{
         margin: 3rem 0;
@@ -528,12 +585,14 @@ ol, ul {
     .la-empresa-body{
         justify-self: center;
         align-self: center;
+        text-align: center;
         margin-bottom: 2rem;
     }
     
     .ayuda-body{
         justify-self: center;
         align-self: center;
+        text-align: center;
         margin-bottom: 2rem;
     }
     
@@ -557,7 +616,6 @@ ol, ul {
     .logo-bellini{
         justify-self: center;
         align-self: center;
-        margin-top: 3rem;
     }
     
     .list-redes{
