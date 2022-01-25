@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+ol, ul {
+    padding-left: 0;
+}
+
 @font-face {
   /* NEGRITA */
   font-family: "Avenir-Bold";
@@ -47,7 +51,7 @@
     color: #fecb37
 }
 
-.section-light {
+/* .section-light {
     background-image: url(../img/fondo-light.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,7 +63,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px 200px;
-}
+} */
 
 .section {
     padding: 100px;
@@ -174,8 +178,8 @@
 }
 
 .img-radius {
-    width: 70px;
-    height: 70px;
+    width: 4.375rem;
+    height: 4.375rem;
     border-radius: 50%;
 }
 
@@ -213,21 +217,82 @@
     background-image: url(../img/fondo-black.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 50px 100px;
-    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "la-empresa ayuda contacto ."
+    "la-empresa-body ayuda-body contacto-body1 contacto-body2"
+    "copyright logo-bellini logo-bellini list-redes";
+    padding: 0 4rem;
+    padding-top: 3rem;
+
 }
+
+.la-empresa{
+    grid-area: la-empresa;
+}
+
+.ayuda{
+    grid-area: ayuda;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+.la-empresa-body{
+    grid-area: la-empresa-body;
+}
+
+.ayuda-body{
+    grid-area: ayuda-body;
+}
+
+.contacto-body1{
+    grid-area: contacto-body1;
+}
+
+.contacto-body2{
+    grid-area: contacto-body2;
+    justify-self: start
+}
+
+.copyright {
+    grid-area: copyright;
+    justify-self: start;
+    align-self: center;
+}
+
+.logo-bellini{
+    grid-area: logo-bellini;
+  justify-self: center;
+}
+
+.list-redes{
+    grid-area: list-redes;
+    justify-self: center;
+    align-self: center;
+}
+
+.content-list-redes{
+    display: flex;
+    justify-content: space-around;
+    width: 9rem;
+}
+
+
 
 .sub-footer {
     color: white;
     font-family: "Avenir-Bold";
-    font-size: 17px;
+    font-size: 1.063rem;
 }
 
 .list-footer {
     color: #c3c3c3;
     font-family: "Avenir-Normal";
     padding: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     list-style: none;
     padding-bottom: 5px;
 }
@@ -236,7 +301,7 @@
     color: #fff;
     font-family: "Avenir-Bold";
     padding: 0;
-    font-size: 15px;
+    font-size: 0.938rem;
     list-style: none;
     padding-bottom: 5px;
 }
@@ -245,11 +310,10 @@
     color: #fff;
     font-family: "Avenir-Normal";
     padding: 0;
-    font-size: 25px;
+    font-size: 1.563rem;
     list-style: none;
     padding-bottom: 5px;
     display: inline;
-    margin-left: 40px;
 }
 
 .img-header {
@@ -422,7 +486,7 @@
 
   @media (max-width: 576px) {
     *{
-          font-size: 12px;
+          font-size: 14px;
       }
 
     .container-locales{
@@ -431,4 +495,81 @@
     .cuadro-local { width: 208px;}
 
     .img-locales {width: 60%;}
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "la-empresa ayuda"
+        "la-empresa-body ayuda-body"
+        "contacto ."
+        "contacto-body1 contacto-body2"
+        "copyright list-redes"
+        "logo-bellini logo-bellini";
+        padding: 0;
+        padding-top: 3rem;
+    
+    }
+    
+    .la-empresa{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .ayuda{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .contacto{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .la-empresa-body{
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    
+    .ayuda-body{
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    
+    .contacto-body1{
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    
+    .contacto-body2{
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 2rem;
+    }
+    
+    .copyright {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .logo-bellini{
+        justify-self: center;
+        align-self: center;
+        margin-top: 3rem;
+    }
+    
+    .list-redes{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .content-list-redes{
+        width: 9rem;
+    }
+
+    .img-logo-bellini{
+        width: 7rem;
+    }
   }

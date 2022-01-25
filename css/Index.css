@@ -2,11 +2,11 @@
 @import url('http://fonts.cdnfonts.com/css/avenir-lt-std');
 
 .section-black {
-    background-image: url(../img/fondo-black.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 700px;
+    /* background-image: url(../img/fondo-black.svg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* display: flex; */
+    /* height: 700px; */
 }
 
 .col-left{
@@ -48,9 +48,8 @@
     width: 45%;
 }
 
-.img-plato-inicio{
-    width: 50%;
-    height: 50%;
+.plato-inicio{
+  width: 300px;
 }
 
 
@@ -61,6 +60,7 @@
 
 .text-carta{
     font-family: 'Hey October', sans-serif;
+    text-align: center;
     size: 3rem;
 }
 
@@ -122,17 +122,17 @@
     justify-self: start;
 }
 
+.href-ver-menu{
+  display: block;
+  text-align: center;
+
+}
+
 
 
     @media (max-width: 576px) {
     *{
-        font-size: 12px;
-        background-color: rosybrown;
-    }
-
-    .container {
-      width: 100% !important;
-      background-color: red;
+        font-size: 10px;
     }
 
     .section-black {
@@ -161,14 +161,41 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: url(../img/hover-inicio.png) right no-repeat;
+      background: url(../img/hover-inicio.svg) right no-repeat;
       background-size: 60%;
       width: 100%;
     }
 
-    .img-plato-inicio{
-        width: 40%;
-        height: 60%;
+    .plato-inicio{
+      width: 80em;
+      margin: 0 auto;
     }
+
+
+    .container-cards-menus {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 0;
+  }
+
+    .card-menu {
+      display: flex;
+      justify-self: center;
+      width: 90%;
+  }
+
+  .href-ver-menu{
+   margin-bottom: 3rem;
+  
+  }
+
+  .text-carta{
+    margin-top: 3rem;
+}
+
+.text-body-carta{
+  padding: 0 2rem;
+  text-align: center;
+}
     
 }
